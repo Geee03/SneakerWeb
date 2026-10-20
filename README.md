@@ -1,78 +1,83 @@
-# G3SNKRS
+# 👟 G3SNKRS
 
-Proyecto Lenguaje de marcas. Página de una tienda de zapatillas realizada con HTML, CSS y JavaScript.
+### Sneakers, estilo urbano y un poco de código 🖤💜
 
-## Qué incluye
+Mi proyecto de **Lenguaje de marcas — DAW**: una tienda de zapatillas con estética oscura y detalles morados. Puedes mirar el catálogo, guardar tus pares favoritos y probar todo el recorrido de compra.
 
-- Diseño adaptable a móvil y ordenador.
-- Ocho modelos con ficha, descripción, precio de ejemplo y selector de talla.
-- Filtros por tipo, búsqueda y ordenación por nombre o precio.
-- Bolsa con eliminación de artículos y total. Se guarda en el navegador.
-- Enlace de contacto por correo.
-- Compra simulada con datos de envío, entrega estándar o exprés, resumen y confirmación.
+**HTML · CSS · JavaScript** — sin frameworks ni instalaciones raras 🤝
 
-Es una tienda de demostración: no realiza pedidos ni cobra pagos.
+## 📸 Así se ve
 
-## Archivos
+![Catálogo de G3SNKRS con zapatillas y filtros](docs/catalogo.png)
 
-| Archivo | Contenido |
-| --- | --- |
-| `index.html` | Estructura y secciones de la página |
-| `styles.css` | Colores, tipografía, distribución y adaptación a pantallas |
-| `catalogo.js` | Datos de las zapatillas |
-| `app.js` | Búsqueda, filtros, fichas y bolsa |
-| `assets/` | Imágenes y favicon |
-| `CREDITOS.md` | Procedencia de los recursos |
+<details>
+<summary>📱 Ver el menú en móvil</summary>
 
-## Cómo funciona
+<img src="docs/movil.png" alt="Menú desplegable de G3SNKRS en móvil" width="300">
 
-`catalogo.js` se carga antes de `app.js`. La lista `productos` contiene los datos de cada modelo. La función `mostrarCatalogo()` filtra esa lista según el buscador y la categoría, aplica el orden elegido y crea las tarjetas.
+</details>
 
-Al abrir una ficha, `abrirFicha()` muestra sus datos. El formulario guarda el identificador del producto y la talla en la lista `bolsa`. `mostrarBolsa()` calcula el total, y `guardarBolsa()` conserva la lista usando `localStorage`.
+## 🔥 Qué puedes hacer
 
-Los botones y etiquetas están escritos en HTML; CSS controla su apariencia y JavaScript responde a las acciones del usuario.
+- 👟 Explorar los **8 modelos** y abrir sus fichas.
+- 🔎 Buscar zapatillas, filtrar por tipo y ordenar por precio o nombre.
+- 💜 Guardar favoritos y volver a verlos al abrir la página.
+- 📏 Consultar una guía de tallas orientativa.
+- 🛍️ Añadir productos con su talla, quitarlos o vaciar la bolsa.
+- 📦 Probar una compra con formulario, envío estándar o exprés y confirmación.
+- 📱 Usarla en móvil con su menú desplegable.
 
-## Añadir otro modelo
+> 🧪 Es una demo para clase. Aquí se prueban pedidos, no se gastan euros: **no hay cobros, envíos ni compras reales**. Tampoco se piden tarjetas.
 
-1. Guarda su foto en `assets/`.
-2. Copia un objeto de `catalogo.js`.
-3. Asigna un `id` distinto y cambia nombre, imagen, precio y descripción.
-4. Utiliza una categoría existente: `low`, `high` o `running`.
-5. Añade `fotografia: true` si usas una foto con fondo.
+## 🚀 Para abrirla
 
-El contador se actualiza automáticamente.
+Descarga el repositorio y abre **`index.html`**. Ya está, sin más vueltas.
 
-## Ver la página
-
-Abre `index.html` o ejecuta desde esta carpeta:
+Si prefieres usar un servidor local, ejecuta esto desde la carpeta del proyecto:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Después abre http://localhost:8000.
+Después entra en **http://localhost:8000**.
 
-## Subir a GitHub Pages
+## 🗂️ Dónde está cada cosa
 
-1. Crea un repositorio y sube estos archivos, dejando `index.html` en la raíz.
-2. En **Settings → Pages**, elige **Deploy from a branch**.
-3. Selecciona la rama `main` y la carpeta `/ (root)`.
-4. Guarda y espera al enlace que proporciona GitHub.
+| Archivo | Qué lleva |
+| --- | --- |
+| `index.html` | La estructura, secciones y formularios |
+| `styles.css` | El diseño y la adaptación a móvil |
+| `catalogo.js` | Los modelos, fotos, precios y descripciones |
+| `app.js` | Filtros, favoritos, bolsa y compra de prueba |
+| `assets/` | Imágenes de las zapatillas y favicon |
+| `docs/` | Capturas para este README |
+| `CREDITOS.md` | Procedencia de las imágenes |
 
-Antes de publicarlo, comprueba que el correo de contacto sea el tuyo y revisa la procedencia de las imágenes en `CREDITOS.md`.
+## 🛠️ Para añadir más zapatillas
 
-## Probar una compra
+1. Guarda la imagen en `assets/`.
+2. Añade un producto en `catalogo.js` con un `id` que no se repita.
+3. Rellena el nombre, foto, precio, descripción y categoría: `low`, `high` o `running`.
+4. Si es una foto con fondo, añade `fotografia: true`.
 
-Añade un modelo con su talla y abre la bolsa. Pulsa «Tramitar pedido de prueba», rellena el formulario con datos ficticios y elige la entrega. El envío estándar suma 5 € y el exprés 10 € al total ilustrativo.
+El contador de modelos se actualiza solo 👌
 
-El formulario comprueba los campos obligatorios, el formato del correo y las cinco cifras del código postal. Confirma que entiendes que es una simulación y pulsa «Confirmar pedido de prueba». Se muestra una referencia local y se vacía la bolsa. No se procesan pagos, no se envían correos ni se crean pedidos reales.
+## 🛒 Cómo va la compra de prueba
 
-Los datos del formulario no se guardan en `localStorage` ni se envían a ningún servidor. Se borran al confirmar o cerrar la compra. La bolsa y los favoritos se conservan en el navegador. Los costes están en el objeto `entregas` de `app.js`.
+Elige un par y su talla → abre la bolsa → pulsa **Tramitar pedido de prueba** → completa el formulario con **datos ficticios** → confirma.
 
-## Otras funciones
+El envío estándar suma **5 €** y el exprés **10 €** al total de ejemplo. Al terminar aparece una referencia de prueba y se vacía la bolsa.
 
-Los corazones guardan los modelos favoritos en el navegador. «Ver favoritos» muestra solo esa selección, y el enlace del menú abre los favoritos sin filtros anteriores.
+La bolsa y los favoritos se guardan en el navegador con `localStorage`. Los datos del formulario **no se envían ni se guardan**: se borran al cerrar o confirmar la compra.
 
-La guía de tallas se abre desde la colección o la ficha. Incluye una tabla orientativa de ejemplo. En móvil, el botón de menú permite abrir y cerrar la navegación; también se cierra con Escape o al elegir un enlace.
+## 🌍 GitHub Pages
 
-«Vaciar bolsa» elimina todos los artículos de la selección y desactiva el botón de compra cuando no queda ninguno.
+Para publicar la web: **Settings → Pages → Deploy from a branch → main → / (root) → Save**.
+
+## 📷 Imágenes y créditos
+
+Las fotografías son recursos de muestra. Los nombres de la colección y los precios son de ejemplo, y las tallas son orientativas. La procedencia de las imágenes está en [CREDITOS.md](CREDITOS.md). No es una tienda oficial de las marcas que aparecen.
+
+---
+
+**G3SNKRS · Proyecto Lenguaje de marcas 👟💜**
