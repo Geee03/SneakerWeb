@@ -4,7 +4,7 @@
 
 Mi proyecto de **Lenguaje de marcas — DAW**: una tienda de zapatillas con estética oscura y detalles morados. Puedes mirar el catálogo, guardar tus pares favoritos y probar todo el recorrido de compra.
 
-**HTML · CSS · JavaScript** — sin frameworks ni instalaciones raras 🤝
+**HTML · CSS · JavaScript**
 
 ## 📸 Así se ve
 
@@ -27,11 +27,11 @@ Mi proyecto de **Lenguaje de marcas — DAW**: una tienda de zapatillas con est�
 - 📦 Probar una compra con formulario, envío estándar o exprés y confirmación.
 - 📱 Usarla en móvil con su menú desplegable.
 
-> 🧪 Es una demo para clase. Aquí se prueban pedidos, no se gastan euros: **no hay cobros, envíos ni compras reales**. Tampoco se piden tarjetas.
+> 🧪 Proyecto de demostración para clase. No se realizan compras, cobros ni envíos reales.
 
 ## 🚀 Para abrirla
 
-Descarga el repositorio y abre **`index.html`**. Ya está, sin más vueltas.
+Descarga el repositorio y abre **`index.html`**.
 
 Si prefieres usar un servidor local, ejecuta esto desde la carpeta del proyecto:
 
@@ -60,7 +60,7 @@ Después entra en **http://localhost:8000**.
 3. Rellena el nombre, foto, precio, descripción y categoría: `low`, `high` o `running`.
 4. Si es una foto con fondo, añade `fotografia: true`.
 
-El contador de modelos se actualiza solo 👌
+El contador de modelos se actualiza automáticamente.
 
 ## 🛒 Cómo va la compra de prueba
 
