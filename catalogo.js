@@ -1,0 +1,86 @@
+const productos = [
+  {
+    id: "black",
+    nombre: "Black / Purple",
+    categoria: "low",
+    tipo: "Low top",
+    imagen: "assets/zapa.png",
+    precio: 189,
+    descripcion:
+      "Zapatilla baja de color negro con detalles plateados y morados.",
+  },
+  {
+    id: "blue",
+    nombre: "Blue / Off White",
+    categoria: "high",
+    tipo: "High top",
+    imagen: "assets/shoes.png",
+    precio: 129,
+    descripcion:
+      "Zapatilla de caña alta en azul, con tejido de malla y suela clara.",
+  },
+  {
+    id: "red-run",
+    nombre: "Red Run",
+    categoria: "running",
+    tipo: "Running",
+    imagen: "assets/modelo-01.jpg",
+    precio: 95,
+    fotografia: true,
+    descripcion: "Diseño deportivo en rojo con tejido de malla y suela blanca.",
+  },
+  {
+    id: "caramel",
+    nombre: "Caramel Street",
+    categoria: "low",
+    tipo: "Low top",
+    imagen: "assets/modelo-02.jpg",
+    precio: 110,
+    fotografia: true,
+    descripcion:
+      "Tonos caramelo, cordones claros y una silueta baja de estilo urbano.",
+  },
+  {
+    id: "air-coral",
+    nombre: "Air Coral",
+    categoria: "running",
+    tipo: "Running",
+    imagen: "assets/modelo-03.jpg",
+    precio: 145,
+    fotografia: true,
+    descripcion:
+      "Base blanca con detalles en coral y una suela de inspiración deportiva.",
+  },
+  {
+    id: "white-street",
+    nombre: "White Street",
+    categoria: "low",
+    tipo: "Low top",
+    imagen: "assets/modelo-04.jpg",
+    precio: 120,
+    fotografia: true,
+    descripcion:
+      "Un diseño completamente blanco, de líneas sencillas y perfil bajo.",
+  },
+  {
+    id: "court-white",
+    nombre: "Court White",
+    categoria: "low",
+    tipo: "Low top",
+    imagen: "assets/modelo-06.jpg",
+    precio: 85,
+    fotografia: true,
+    descripcion:
+      "Zapatilla blanca de inspiración clásica, con perforaciones laterales.",
+  },
+  {
+    id: "pink-runner",
+    nombre: "Pink Runner",
+    categoria: "running",
+    tipo: "Running",
+    imagen: "assets/modelo-08.jpg",
+    precio: 135,
+    fotografia: true,
+    descripcion: "Combinación de rosa, gris y blanco en una silueta deportiva.",
+  },
+];
