@@ -1,6 +1,6 @@
 # 👟 G3SNKRS
 
-### Sneakers, estilo urbano y un poco de código 🖤💜
+### Sneakers, estilo urbano y un poco de código :)
 
 Mi proyecto de **Lenguaje de marcas — DAW**: una tienda de zapatillas con estética oscura y detalles morados. Puedes mirar el catálogo, guardar tus pares favoritos y probar todo el recorrido de compra.
 
