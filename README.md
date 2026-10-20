@@ -51,7 +51,6 @@ Después entra en **http://localhost:8000**.
 | `app.js` | Filtros, favoritos, bolsa y compra de prueba |
 | `assets/` | Imágenes de las zapatillas y favicon |
 | `docs/` | Capturas para este README |
-| `CREDITOS.md` | Procedencia de las imágenes |
 
 ## 🛠️ Para añadir más zapatillas
 
@@ -74,9 +73,7 @@ La bolsa y los favoritos se guardan en el navegador con `localStorage`. Los dato
 
 Para publicar la web: **Settings → Pages → Deploy from a branch → main → / (root) → Save**.
 
-## 📷 Imágenes y créditos
-
-Las fotografías son recursos de muestra. Los nombres de la colección y los precios son de ejemplo, y las tallas son orientativas. La procedencia de las imágenes está en [CREDITOS.md](CREDITOS.md). No es una tienda oficial de las marcas que aparecen.
+Las fotos del catálogo combinan imágenes del proyecto original y de Unsplash. Los precios son de ejemplo.
 
 ---
 
